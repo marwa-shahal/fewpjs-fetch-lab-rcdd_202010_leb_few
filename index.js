@@ -1,9 +1,8 @@
 function fetchBooks() {
-  fetch()
+  fetch('https://anapioficeandfire.com/api/books')
       .then(res => res.json())
       .then(data => {
-        console.log(data);
-        renderWeather(data);
+        renderBooks(data);
       }
   
   
